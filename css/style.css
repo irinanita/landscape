@@ -1,5 +1,88 @@
-p {
-  color: blue;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400, 700, 900");
+.section-heading h2 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 62px;
+}
+
+/* CARD SYLING */
+.card {
+  width: 360px;
+  height: 514px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+.card:hover {
+  background-color: #1a1a1a;
+}
+.card:hover .card-header > h4 {
+  color: #ffffff;
+}
+.card:hover .card-title {
+  color: #ffffff;
+}
+.card:hover .list-group-item {
+  color: #ffffff;
+  opacity: 0.4;
+}
+.card:hover .btn-card {
+  background-color: #2b63e3;
+  color: #ffffff;
+  border: #2b63e3;
+}
+.card-header {
+  background-color: transparent;
+  border-bottom: transparent;
+}
+.card-header h4 {
+  color: #202124;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.card-title {
+  text-align: center;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 72px;
+}
+.card-button {
+  text-align: center;
+}
+
+.list-group {
+  align-items: center;
+  text-align: center;
+}
+.list-group-item {
+  border: transparent;
+  color: #000000;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.4;
+}
+
+.btn-card {
+  width: 220px;
+  height: 58px;
+  border-radius: 100px;
+  border: 1px solid #eaeaea;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 0.75rem 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */
