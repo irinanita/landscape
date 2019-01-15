@@ -5,11 +5,12 @@
 /* Variables */
 @import 'variables';
 
-/*Components*/
-@import 'components/card';
+/*Global*/
+@import 'global/card';
+@import 'global/overlay';
 
 /*Buttons*/
-@import 'buttons';
+@import 'global/buttons';
 
 
 

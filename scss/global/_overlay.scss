@@ -1,0 +1,52 @@
+.wrapper{
+    position: relative;
+    min-width: 263px;
+    &:hover{
+        .overlay{
+            opacity: 1;
+        }
+    }
+}
+.overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $white;
+}
+
+.text {
+    color:$black;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    top:0;
+    left: 0;
+    &-heading{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+    } 
+    &-subheading{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 1.2px;
+    }
+}
+
+.media{
+    margin-top: 25px;
+    i{
+        font-size: 30px;
+        margin-right: 20px;
+        color: #cccccc;
+    }
+}

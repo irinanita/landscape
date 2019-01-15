@@ -1,6 +1,9 @@
+/* FONT */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+/* Variables */
 /* COLOURS */
 /*FONTS*/
+/*Global*/
 .section-heading h2 {
   color: #000000;
   text-align: center;
@@ -80,7 +83,66 @@
   opacity: 0.4;
 }
 
-.btn-card {
+/* Media Querries */
+@media (min-width: 576px) {
+  .card-deck .card {
+    margin: 15px auto;
+  }
+}
+.wrapper {
+  position: relative;
+  min-width: 263px;
+}
+.wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ffffff;
+}
+
+.text {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.text-subheading {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+}
+
+.media {
+  margin-top: 25px;
+}
+.media i {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #cccccc;
+}
+
+/*Buttons*/
+.btn-general {
   width: 220px;
   height: 58px;
   border-radius: 100px;
@@ -91,13 +153,6 @@
   font-weight: 700;
   line-height: 28px;
   padding: 0.75rem 0.75rem;
-}
-
-/*Media Querries*/
-@media (min-width: 576px) {
-  .card-deck .card {
-    margin: 15px auto;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
