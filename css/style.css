@@ -1,6 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400, 700, 900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900");
+/* COLOURS */
+/*FONTS*/
 .section-heading h2 {
   color: #000000;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 900;
@@ -8,11 +11,16 @@
 }
 
 /* CARD SYLING */
+.card-deck {
+  margin: 15px auto;
+}
+
 .card {
   width: 360px;
   height: 514px;
   border: 1px solid #cccccc;
   box-sizing: border-box;
+  margin: 15px auto;
 }
 .card:hover {
   background-color: #1a1a1a;
@@ -83,6 +91,13 @@
   font-weight: 700;
   line-height: 28px;
   padding: 0.75rem 0.75rem;
+}
+
+/*Media Querries*/
+@media (min-width: 576px) {
+  .card-deck .card {
+    margin: 15px auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

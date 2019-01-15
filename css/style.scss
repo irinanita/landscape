@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400, 700, 900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+/* COLOURS */
+$white: #ffffff;
+$black: #000000;
+$hover-color:#2b63e3;
+
+/*FONTS*/
+$montserrat:'Montserrat',sans-serif;
 
 .section-heading{
     h2{
-    color: #000000;
-    font-family: 'Montserrat',sans-serif;
+    color: $black;
+    text-align: center;
+    font-family: $montserrat;
     font-size: 48px;
     font-weight: 900;
     line-height: 62px;
@@ -12,27 +21,31 @@
 
 /* CARD SYLING */
 
+.card-deck{
+    margin: 15px auto;
+}
 .card{
     width: 360px;
     height: 514px;
     border: 1px solid #cccccc;
     box-sizing: border-box;
+    margin: 15px auto;
     &:hover{
         background-color: #1a1a1a;
         .card-header>h4{
-            color: #ffffff;
+            color: $white;
         }
         .card-title{
-            color: #ffffff;
+            color: $white;
         }
         .list-group-item{
-            color: #ffffff;
+            color: $white;
             opacity: 0.4;
         }
         .btn-card{
-            background-color: #2b63e3;
-            color:#ffffff;
-            border: #2b63e3;
+            background-color: $hover-color;
+            color:$white;
+            border: $hover-color;
         }
     }
     &-header{
@@ -41,7 +54,7 @@
         
         h4{  
             color: #202124;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $montserrat;
             font-size: 18px;
             font-weight: 700;
             line-height: 26px;
@@ -51,8 +64,8 @@
     }
     &-title{
         text-align: center;
-        color: #000000;
-        font-family: 'Montserrat',sans-serif;
+        color: $black;
+        font-family: $montserrat;
         font-size: 56px;
         font-weight: 900;
         line-height: 72px;
@@ -67,9 +80,9 @@
     text-align: center;
     &-item{
         border:transparent;
-        color: #000000;
+        color: $black;
         background-color: transparent;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $montserrat;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
@@ -82,10 +95,17 @@
     height: 58px;
     border-radius: 100px;
     border: 1px solid #eaeaea;
-    color: #000000;
-    font-family: 'Montserrat',sans-serif;
+    color: $black;
+    font-family: $montserrat;
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     padding: 0.75rem .75rem;
+}
+
+/*Media Querries*/
+@media (min-width: 576px){
+    .card-deck .card {
+        margin:15px auto;
+    }
 }
