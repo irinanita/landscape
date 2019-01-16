@@ -13,12 +13,22 @@
 .card-deck{
     margin: 15px auto;
 }
+
 .card{
-    width: 360px;
-    height: 514px;
+    
     border: 1px solid #cccccc;
     box-sizing: border-box;
-    margin: 15px auto;
+    transition: .5s ease-in-out;
+    
+    &-wrapper{
+        max-width: 360px;
+        max-height: 514px;
+        margin: 0 auto;
+    }
+    &-button{
+        text-align: center;
+    }
+    
     &:hover{
         background-color: #1a1a1a;
         .card-header>h4{
@@ -31,10 +41,11 @@
             color: $white;
             opacity: 0.4;
         }
-        .btn-card{
+        .btn-general{
             background-color: $hover-color;
             color:$white;
             border: $hover-color;
+           
         }
     }
     &-header{
@@ -59,9 +70,6 @@
         font-weight: 900;
         line-height: 72px;
     }
-    &-button{
-        text-align: center;
-    }       
 }    
 
 .list-group{

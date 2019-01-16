@@ -19,11 +19,17 @@
 }
 
 .card {
-  width: 360px;
-  height: 514px;
   border: 1px solid #cccccc;
   box-sizing: border-box;
-  margin: 15px auto;
+  transition: 0.5s ease-in-out;
+}
+.card-wrapper {
+  max-width: 360px;
+  max-height: 514px;
+  margin: 0 auto;
+}
+.card-button {
+  text-align: center;
 }
 .card:hover {
   background-color: #1a1a1a;
@@ -38,7 +44,7 @@
   color: #ffffff;
   opacity: 0.4;
 }
-.card:hover .btn-card {
+.card:hover .btn-general {
   background-color: #2b63e3;
   color: #ffffff;
   border: #2b63e3;
@@ -64,9 +70,6 @@
   font-weight: 900;
   line-height: 72px;
 }
-.card-button {
-  text-align: center;
-}
 
 .list-group {
   align-items: center;
@@ -91,7 +94,8 @@
 }
 .wrapper {
   position: relative;
-  min-width: 263px;
+  max-width: 263px;
+  margin: 15px auto;
 }
 .wrapper:hover .overlay {
   opacity: 1;
@@ -106,7 +110,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in;
   background-color: #ffffff;
 }
 
@@ -119,6 +123,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: auto;
 }
 .text-heading {
   font-size: 24px;
