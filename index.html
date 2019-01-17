@@ -260,36 +260,37 @@
         
         </div>
     </section>
-
     <footer class="container">
     <!--Form-->
     <div class="section-heading">
         <h2>Are You Ready?</h2>
-        <p>This sounded a very good reason, and Alice was quite pleased to know it. 
-            «I never thought of that before!» she said.</p>
+        <div class='section-paragraph mg-b'>
+            <p>This sounded a very good reason, and Alice was quite pleased to know it. 
+                «I never thought of that before!» she said.</p>
+        </div>    
     </div>
-    <form>
+    <form class=" form mg-t">
         <div class="row">
-        <div class="form-group col">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
         </div>
-        <div class="form-group col">
+        <div class="form-group col-sm-12 col-md-6 col-lg-4">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password">
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
-        <div class="form-group col">
+        <div class="form-group col-sm-12 col-md-6 col-lg-4">
             <label for="password">Confirm Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Repeat your password">
+            <input type="password" class="form-control" id="password" placeholder="Repeat your password" required>
           </div>
         </div>
-        <div class = "row">
-            <div class="col"> 
-                <a href="#" class="btn btn-general">Learn More</a>
-            </div>
-            <div class="col">
-                <button type="submit" class="btn btn-general">Get started</button>
-            </div>
+        <!--Form Buttons-->
+        <div class = "row form-buttons mg-t mg-b">
+            <div class = " offset-lg-2 col-lg-8">
+                <a href="#" class="btn btn-general btn-general-form" role="button">Learn More</a>
+                <button type="submit" class="btn btn-general btn-general-form">Get started</button>
+            </div>    
+            </div>    
         </div>
       </form>
     </footer>
