@@ -88,7 +88,7 @@
 }
 
 /* Media Querries */
-@media (min-width: 576px){
+@media (max-width: 991px){
     .card-deck .card {
         margin:15px auto;
     }

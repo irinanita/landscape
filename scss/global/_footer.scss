@@ -1,5 +1,7 @@
-footer{
-    .section-heading > p {
+
+.section-paragraph{
+    margin:25px auto;
+    p {
         color: $black;
         font-family: $montserrat;
         font-size: 16px;
@@ -7,5 +9,5 @@ footer{
         line-height: 26px;
         text-align: center;
     }
-}
+}   
 

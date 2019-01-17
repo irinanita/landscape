@@ -87,7 +87,7 @@
 }
 
 /* Media Querries */
-@media (min-width: 576px) {
+@media (max-width: 991px) {
   .card-deck .card {
     margin: 15px auto;
   }
@@ -112,6 +112,7 @@
   opacity: 0;
   transition: 0.5s ease-in;
   background-color: #ffffff;
+  overflow: auto;
 }
 
 .text {
@@ -123,7 +124,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  overflow: auto;
 }
 .text-heading {
   font-size: 24px;
@@ -146,7 +146,40 @@
   color: #cccccc;
 }
 
-footer .section-heading > p {
+.btn-general-left {
+  float: right;
+}
+
+.btn-general-left {
+  float: left;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 993px) {
+  .text {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 22px;
+  }
+  .text-heading {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .text-subheading {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  .media {
+    margin-top: 12px;
+  }
+  .media i {
+    font-size: 20px;
+  }
+}
+.section-paragraph {
+  margin: 25px auto;
+}
+.section-paragraph p {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -155,11 +188,42 @@ footer .section-heading > p {
   text-align: center;
 }
 
+.form {
+  margin-top: 50px;
+}
 .form-control {
   width: 300px;
   height: 48px;
   border-radius: 70px;
   border: 1px solid #eaeaea;
+}
+.form-group label {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.form-group input {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-group input::placeholder {
+  opacity: 0.4;
+}
+.form-buttons {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mg-top {
+  margin-top: 15px;
 }
 
 /*Buttons*/
@@ -174,6 +238,13 @@ footer .section-heading > p {
   font-weight: 700;
   line-height: 28px;
   padding: 0.75rem 0.75rem;
+}
+.btn-general-form {
+  width: 200px;
+}
+.btn-general-form:hover {
+  background-color: #42cb83;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
