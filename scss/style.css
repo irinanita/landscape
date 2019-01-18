@@ -21,7 +21,9 @@
 .card {
   border: 1px solid #cccccc;
   box-sizing: border-box;
-  transition: 0.5s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 .card-wrapper {
   max-width: 360px;
@@ -110,7 +112,9 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
   background-color: #ffffff;
   overflow: auto;
 }
@@ -176,6 +180,15 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .form-control {
+    margin: 0 auto;
+  }
+
+  .form-group {
+    text-align: center;
+  }
+}
 .section-paragraph {
   margin: 25px auto;
 }
@@ -188,8 +201,92 @@
   text-align: center;
 }
 
+.footer {
+  background-color: #1a1a1a;
+  max-height: 266px;
+  padding: 60px 130px 24px 130px;
+}
+.footer-section {
+  padding-right: 0px;
+}
+
+.navigate {
+  list-style-type: none;
+}
+.navigate li {
+  display: inline;
+  margin-right: 40px;
+}
+.navigate li a {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.4;
+  display: inline;
+}
+.navigate li a:hover {
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links {
+  list-style-type: none;
+  float: right;
+}
+.social-links li {
+  display: inline;
+  margin-right: 20px;
+}
+.social-links li a:hover {
+  opacity: 0.4;
+  cursor: pointer;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.divider {
+  border-color: #ffffff;
+  opacity: 0.4;
+  height: 1px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px 40px;
+  }
+  .footer-section {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .social-links {
+    float: none;
+  }
+
+  .divider {
+    margin-top: 10px;
+  }
+}
+form {
+  margin: 0 auto;
+}
+
 .form {
-  margin-top: 50px;
+  margin-top: 25px auto;
 }
 .form-control {
   width: 300px;
@@ -222,8 +319,21 @@
   margin-bottom: 50px;
 }
 
-.mg-top {
-  margin-top: 15px;
+@media screen and (max-width: 449px) {
+  .form-buttons {
+    margin-top: 25px;
+  }
+
+  .btn-general-form {
+    margin-bottom: 15px;
+  }
+}
+.mg-t {
+  margin-top: 50px;
+}
+
+.mg-b {
+  margin-bottom: 15px;
 }
 
 /*Buttons*/
@@ -238,6 +348,9 @@
   font-weight: 700;
   line-height: 28px;
   padding: 0.75rem 0.75rem;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
 }
 .btn-general-form {
   width: 200px;

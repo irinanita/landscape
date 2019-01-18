@@ -1,5 +1,9 @@
+form{
+    margin:0 auto;
+}
+
 .form{
-    margin-top:50px;
+    margin-top:25px auto;
     &-control{
         width: 300px;
         height: 48px;
@@ -34,3 +38,14 @@
     }
 }
 
+@media screen and (max-width: 449px) {
+
+    .form-buttons{
+        margin-top:25px;
+    }
+
+    .btn-general-form {
+        margin-bottom: 15px;
+    }
+    
+}    

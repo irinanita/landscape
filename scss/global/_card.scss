@@ -18,7 +18,9 @@
     
     border: 1px solid #cccccc;
     box-sizing: border-box;
-    transition: .5s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
     
     &-wrapper{
         max-width: 360px;

@@ -9,6 +9,9 @@
     font-weight: 700;
     line-height: 28px;
     padding: 0.75rem .75rem;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
     &-form{
         width:200px;
         &:hover{
