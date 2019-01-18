@@ -174,14 +174,12 @@
   font-size: 30px;
   margin-right: 20px;
   color: #cccccc;
+  -moz-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
-
-.btn-general-left {
-  float: right;
-}
-
-.btn-general-left {
-  float: left;
+.media i:hover {
+  color: #000000;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 993px) {
@@ -253,15 +251,6 @@ form {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 449px) {
-  .form-buttons {
-    margin-top: 25px;
-  }
-
-  .btn-general-form {
-    margin-bottom: 15px;
-  }
-}
 /*FOOTER SECTION STYLING*/
 .section-paragraph {
   margin: 25px auto;
@@ -392,12 +381,27 @@ form {
   -webkit-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
+.btn-general-header:hover {
+  background-color: #42cb83;
+  color: #ffffff;
+}
 .btn-general-form {
   width: 200px;
 }
 .btn-general-form:hover {
   background-color: #42cb83;
   color: #ffffff;
+}
+
+@media screen and (max-width: 449px) {
+  .btn-general-header,
+.btn-general-form {
+    margin-top: 25px;
+  }
+
+  .form-buttons {
+    margin-top: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

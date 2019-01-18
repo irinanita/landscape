@@ -12,6 +12,12 @@
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    &-header{
+        &:hover{
+            background-color: $green;
+            color:$white;
+        }
+    }
     &-form{
         width:200px;
         &:hover{
@@ -20,3 +26,13 @@
         }
     }
 }
+
+@media screen and (max-width: 449px) {
+    .btn-general-header,
+    .btn-general-form {
+        margin-top:25px;
+    }
+    .form-buttons{
+        margin-top:25px;
+    }
+}   

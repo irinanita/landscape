@@ -53,15 +53,13 @@
         font-size: 30px;
         margin-right: 20px;
         color: #cccccc;
+        -moz-transition: all 0.5s ease-in;
+        -webkit-transition: all 0.5s ease-in;
+        -o-transition: all 0.5s ease-in;
+        &:hover{
+            color:$black;
+        }
     }
-}
-
-.btn-general-left{
-    float: right;
-}
-
-.btn-general-left{
-    float: left;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 993px) {
