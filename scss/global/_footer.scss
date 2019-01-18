@@ -1,4 +1,4 @@
-
+/*FOOTER SECTION STYLING*/
 .section-paragraph{
     margin:25px auto;
     p {
@@ -13,10 +13,16 @@
 
 .footer{
     background-color: #1a1a1a;
-    max-height: 266px;
     padding: 60px 130px 24px 130px;
     &-section{
         padding-right: 0px;
+        p{
+            color:$grey;
+            font-family: $montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
     }
 }
 
@@ -45,12 +51,29 @@
     }
 }
 
+.navigate-bt{
+    float:right;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    li>a{
+        font-family: $montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+    }   
+}
+
+
+
+
 .social-links{
     list-style-type: none;
     float:right;
     li{
         display: inline;
-        margin-right: 20px;
+        margin-right: 18px;
         a{
             &:hover{
                 opacity: 0.4;
@@ -85,7 +108,8 @@
             margin: 20px auto;
         }
     }
-    .social-links{
+    .social-links,
+    .navigate-bt{
         float:none;
     }
     .divider {
