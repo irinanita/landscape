@@ -4,6 +4,32 @@
 /* COLOURS */
 /*FONTS*/
 /*Global*/
+.mg-t {
+  margin-top: 50px;
+}
+
+.mg-b {
+  margin-bottom: 15px;
+}
+
+/*NAVIGATION BAR STYLING*/
+.navbar-logo {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {
+  float: none;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 33px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+}
+
 .section-heading h2 {
   color: #000000;
   text-align: center;
@@ -189,6 +215,53 @@
     text-align: center;
   }
 }
+form {
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 25px auto;
+}
+.form-control {
+  width: 300px;
+  height: 48px;
+  border-radius: 70px;
+  border: 1px solid #eaeaea;
+}
+.form-group label {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.form-group input {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-group input::placeholder {
+  opacity: 0.4;
+}
+.form-buttons {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 449px) {
+  .form-buttons {
+    margin-top: 25px;
+  }
+
+  .btn-general-form {
+    margin-bottom: 15px;
+  }
+}
 /*FOOTER SECTION STYLING*/
 .section-paragraph {
   margin: 25px auto;
@@ -303,61 +376,6 @@
     margin-top: 10px;
   }
 }
-form {
-  margin: 0 auto;
-}
-
-.form {
-  margin-top: 25px auto;
-}
-.form-control {
-  width: 300px;
-  height: 48px;
-  border-radius: 70px;
-  border: 1px solid #eaeaea;
-}
-.form-group label {
-  color: #000000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-}
-.form-group input {
-  color: #000000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-.form-group input::placeholder {
-  opacity: 0.4;
-}
-.form-buttons {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 449px) {
-  .form-buttons {
-    margin-top: 25px;
-  }
-
-  .btn-general-form {
-    margin-bottom: 15px;
-  }
-}
-.mg-t {
-  margin-top: 50px;
-}
-
-.mg-b {
-  margin-bottom: 15px;
-}
-
 /*Buttons*/
 .btn-general {
   width: 220px;

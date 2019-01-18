@@ -1,0 +1,19 @@
+/*NAVIGATION BAR STYLING*/
+.navbar{
+    &-logo{
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }    
+    &-brand {
+        float:none;
+    }
+    &-toggler{
+        position:absolute;
+        top:33px;
+    }       
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
